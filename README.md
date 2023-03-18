@@ -5,7 +5,7 @@
 ## Challenge completed by Kelvin Pucho!!! 💯
 Thanks for checking out this front-end coding challenge. 🙌
 
-Access the resolution of the challenge: [https://kpzaolod6000.github.io/Results-Summary-Component-Challenge-FM/] (https://kpzaolod6000.github.io/Results-Summary-Component-Challenge-FM/)
+Access the resolution of the challenge: [https://kpzaolod6000.github.io/Results-Summary-Component-Challenge-FM/](https://kpzaolod6000.github.io/Results-Summary-Component-Challenge-FM/)
 
 ## You can also visit my linkedin:
 [] (agregar link del linkendin)
