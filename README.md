@@ -8,7 +8,7 @@ Thanks for checking out this front-end coding challenge. 🙌
 Access the resolution of the challenge: [https://kpzaolod6000.github.io/Results-Summary-Component-Challenge-FM/](https://kpzaolod6000.github.io/Results-Summary-Component-Challenge-FM/)
 
 ## You can also visit my linkedin:
-[] (agregar link del linkendin)
+[https://www.linkedin.com/in/kelvin-paul-pucho-zevallos-06aa2a198/](https://www.linkedin.com/in/kelvin-paul-pucho-zevallos-06aa2a198/)
 
 
 ## Welcome! 👋
