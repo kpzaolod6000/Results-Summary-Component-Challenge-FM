@@ -40,6 +40,8 @@
     --light-slate-blue-background: hsl(252, 100%, 67%);
     --light-royal-blue-background: hsl(241, 81%, 54%);
 
+    --light-royal-blue-background-a: hsl(241, 81%, 54%,0.1);
+
     --Violet-blue-circle: hsla(256, 72%, 46%, 1);
     --Persian-blue-circle: hsla(241, 72%, 46%, 0);
 
@@ -90,29 +92,54 @@ body{
     border:none;
     border-radius: inherit;
     padding: 40px 0 56px 0;
+    text-align: center;
 }
 
 .l-title{
-    text-align: center;
+    font-family: 'source500', sans-serif;
     color: var(--light_lavender);
+    font-size: 1.3rem;
 }
 
-.right{
+.l-percent-result{
+    position: relative;
+    /* background: linear-gradient(to bottom, var(--light-royal-blue-background),  var(--light-slate-blue-background)); */
+    background: linear-gradient(to bottom, var(--Violet-blue-circle) 0%, var(--light-royal-blue-background-a) 90%, var(--light-royal-blue-background-a) 100%);
+    border: none;
+    border-radius: 50%;
+    width: 196px;
+    height: 188px;
+    margin: auto;
+    margin-top: 38px;
+    color: var(--Pale-blue);
+}
+
+.l-percent-result h3{
     position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: violet;
-    width: 50%;
-    height: 100%;
-    border-top-right-radius: 1.5em;
-    border-bottom-right-radius: 1.5em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 73px;
 }
 
+.l-percent-result h5{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    font-size: 11px;
+    color: var(--light_lavender) !important;
+}
 
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.l-your-scored{
+    color: var(--White);
+    margin-block-start: 40px;
+    align-items: center;
+}
+.l-your-scored p{
+    margin-block-start: 10px;
+    padding-inline: 56px;
+    background: transparent;
+    font-family: 'source700', sans-serif !important;
+    color: var(--light_lavender) !important;
+}
