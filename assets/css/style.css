@@ -275,3 +275,67 @@ body{
     cursor: pointer;
     background: linear-gradient(to top, var(--light-royal-blue-background) 30%,  var(--light-slate-blue-background) 100%);
 }
+
+
+
+/***
+ * RESPONSIVE
+ */
+
+ @media (max-width: 375px) {
+    body{
+        display: block;
+    }
+    .card{
+        position: relative;
+        height: 508px;
+        width: 375px;
+        border: none;
+        border-radius: 1.5em;
+        box-shadow:none
+    }
+    .left{
+        height: 400px;
+        width: 100%;
+        position: relative;
+        border-radius: 0em 0em 1.5em 1.5em;
+        padding-block-start: 25px;
+    }
+
+    .l-percent-result{
+        width: 166px;
+        height: 168px;
+    }
+
+    .l-percent-result h3{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+    }
+    
+    .l-percent-result h5{
+        margin-block-start: 10px;
+    }
+
+    .l-your-scored{
+        margin-block-start: 15px;
+    }
+
+    .l-your-scored .l-y-title{
+        font-size: 1.5rem;
+    }
+
+    .l-your-scored p{
+        font-size: 1rem;
+        padding-inline: 50px;
+    }
+
+    .right{
+        width: 100%;
+        position: relative;
+    }
+
+    .right .r-title{
+        font-size: 1.3rem;
+    }
+}
