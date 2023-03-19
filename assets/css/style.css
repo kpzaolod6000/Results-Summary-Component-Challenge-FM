@@ -1,4 +1,118 @@
 
 
+/**
+ * TIPOGRAPHY
+ */
+@font-face {
+    font-family: 'source';
+    src: url('../fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'source500';
+    src: url('../fonts/static/HankenGrotesk-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'source700';
+    src: url('../fonts/static/HankenGrotesk-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'source800';
+    src: url('../fonts/static/HankenGrotesk-ExtraBold.ttf');
+}
+
+:root{
+    /**
+     * Colors
+     * */ 
+
+    /** Primary */ 
+
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    /** Gradients */ 
+
+    --light-slate-blue-background: hsl(252, 100%, 67%);
+    --light-royal-blue-background: hsl(241, 81%, 54%);
+
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+
+    /** Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --light_lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'source', sans-serif;
+    font-size: 18px;
+    border: 2px solid red;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card{
+    position: relative;
+    border: 2px solid green;
+    height: 508px;
+    width: 732px;
+    border-radius: 1.5em;
+    background-color: var(--White);
+}
+
+.left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, var(--light-royal-blue-background),  var(--light-slate-blue-background));
+    width: 50%;
+    height: 100%;
+    border:none;
+    border-radius: inherit;
+    padding: 40px 0 56px 0;
+}
+
+.l-title{
+    text-align: center;
+    color: var(--light_lavender);
+}
+
+.right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: violet;
+    width: 50%;
+    height: 100%;
+    border-top-right-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+}
+
+
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
