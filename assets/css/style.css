@@ -31,9 +31,13 @@
     /** Primary */ 
 
     --Light-red: hsl(0, 100%, 67%);
+    --Light-red-a: hsla(0, 100%, 67%,0.05);
     --Orangey-yellow: hsl(39, 100%, 56%);
+    --Orangey-yellow-a: hsla(39, 100%, 56%,0.05);
     --Green-teal: hsl(166, 100%, 37%);
+    --Green-teal-a: hsla(166, 100%, 37%,0.05);
     --Cobalt-blue: hsl(234, 85%, 45%);
+    --Cobalt-blue-a: hsla(234, 85%, 45%,0.05);
 
     /** Gradients */ 
 
@@ -51,6 +55,8 @@
     --White: hsl(0, 0%, 100%);
     --Pale-blue: hsl(221, 100%, 96%);
     --light_lavender: hsl(241, 100%, 89%);
+    --light_lavender-a: hsl(241, 100%, 89%,0.5);
+    --light_lavender-ab: hsl(241, 100%, 89%,0.8);
     --Dark-gray-blue: hsl(224, 30%, 27%);
 
 }
@@ -75,11 +81,12 @@ body{
 
 .card{
     position: relative;
-    border: 2px solid green;
     height: 508px;
     width: 732px;
+    border: none;
     border-radius: 1.5em;
     background-color: var(--White);
+    box-shadow: 1px 40px 90px -20px var(--light_lavender);
 }
 
 .left{
@@ -109,7 +116,7 @@ body{
     border-radius: 50%;
     width: 196px;
     height: 188px;
-    margin: auto;
+    margin-inline: auto;
     margin-top: 38px;
     color: var(--Pale-blue);
 }
@@ -127,8 +134,9 @@ body{
     top: 75%;
     left: 50%;
     transform: translate(-50%, -70%);
-    font-size: 11px;
-    color: var(--light_lavender) !important;
+    margin-block-start: 8px;
+    color: var(--light_lavender-a) !important;
+    font-size: 15px;
 }
 
 .l-your-scored{
@@ -140,6 +148,130 @@ body{
     margin-block-start: 10px;
     padding-inline: 56px;
     background: transparent;
-    font-family: 'source700', sans-serif !important;
-    color: var(--light_lavender) !important;
+    font-family: 'source500', sans-serif !important;
+    color: var(--light_lavender-ab) !important;
+}
+
+
+.right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    align-items: center;
+    background-color: var(--White);
+    width: 50%;
+    height: 100%;
+    border-top-right-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+    padding: 35px 37px 42px 35px;
+    overflow: hidden;
+}
+
+.right .r-title{
+    color: var(--Dark-gray-blue);
+}
+
+.right .r-figures{
+    padding-inline: 15px;
+    padding-block: 40px;
+    font-size: 14px;
+}
+
+.right .r-figures figure{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    padding-inline-end: 11px;
+    border-radius: 7px;
+    border: none;
+}
+
+.right .r-figures figure:not(:last-of-type){
+    margin-block-end: 24px;
+}
+
+.right .r-figures .r-left-subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline-start: 8px;
+}
+
+.right .r-figures .r-left-subtitle h3{
+    margin-inline-start: 8px;
+
+}
+
+.right .r-figures .r-fig-1{
+    background: var(--Light-red-a);
+}
+
+.right .r-figures .r-fig-1 .r-left-subtitle h3{
+    color: var(--Light-red);
+}
+
+.right .r-figures .r-fig-2{
+    background: var(--Orangey-yellow-a);
+}
+
+.right .r-figures .r-fig-2 .r-left-subtitle h3{
+    color: var(--Orangey-yellow);
+}
+
+.right .r-figures .r-fig-3{
+    background: var(--Green-teal-a);
+}
+
+.right .r-figures .r-fig-3 .r-left-subtitle h3{
+    color: var(--Green-teal);
+}
+
+.right .r-figures .r-fig-4{
+    background: var(--Cobalt-blue-a);
+}
+
+.right .r-figures .r-fig-4 .r-left-subtitle h3{
+    color: var(--Cobalt-blue);
+}
+
+.right .r-figures .r-left-value{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right .r-figures .quantity{
+    color: var(--Dark-gray-blue);
+}
+.right .r-figures .total{
+    color: var(--light_lavender);
+}
+
+
+
+
+.right .r-figures figure img {
+    height: 20px;
+    margin-left: 1px;
+}
+
+
+.right button {
+    margin-block-start: 8px;
+    width: 100%;
+    height: 52px;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    color: var(--White);
+    font-family: 'source800', sans-serif;
+    font-size: 1.02rem;
+    background: var(--Dark-gray-blue)
+}
+
+.right button:hover {
+    cursor: pointer;
+    background: linear-gradient(to top, var(--light-royal-blue-background) 30%,  var(--light-slate-blue-background) 100%);
 }
